@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BFBCBC"
+    tools:context=".TakeData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        >
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="#BFBCBC"
+            android:src="@drawable/back1"
+            android:id="@+id/btnBack"
+            android:onClick="Back"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textSize="16pt"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/man"
+            android:background="@color/white"
+            android:onClick="men"
+            android:id="@+id/imgbtnmen"/>
+
+        <ImageButton
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/women"
+            android:background="@color/white"
+            android:onClick="women"
+            android:id="@+id/imgbtnwomen"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" ID "
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:inputType="numberDecimal"
+        android:textSize="13pt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Name "
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:textSize="13pt"
+        android:id="@+id/etName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:textSize="13pt"
+        android:hint=" Height In Meter "
+        android:id="@+id/etHeight"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:textSize="13pt"
+        android:hint=" Weight In Kilogram "
+        android:id="@+id/etWeight"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Insert Patient"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:id="@+id/btnInsert"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select One Patient"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:id="@+id/btnSelectOne"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select All Patient"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:id="@+id/btnSelectAll"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update info"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:id="@+id/btnUpdate"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Delete This Patient"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:id="@+id/btnDelet"/>
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cancel"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:onClick="btnCancel"/>
+
+</LinearLayout>

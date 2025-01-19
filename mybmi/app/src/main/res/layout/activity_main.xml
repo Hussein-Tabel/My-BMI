@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibNoSound"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:onClick="PlaySound"
+            android:src="@drawable/nosound"/>
+
+        <ImageButton
+            android:id="@+id/ibSound"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:onClick="PauseSound"
+            android:src="@drawable/sound" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to BMI cal+"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best guide for calculating"
+        android:textSize="9pt"
+        android:layout_gravity="center"
+        android:textColor="#8A8585"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your body mass index."
+        android:textSize="9pt"
+        android:layout_gravity="center"
+        android:textColor="#8A8585"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Let's go"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnGo"
+        android:onClick="Go"/>
+
+</LinearLayout>
